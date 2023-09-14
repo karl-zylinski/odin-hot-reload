@@ -63,8 +63,6 @@ main :: proc() {
 	game_api_version += 1
 	game_api.init()
 
-	old_game_apis: [dynamic]GameAPI
-
 	for {
 		if game_api.update() == false {
 			break
